@@ -15,8 +15,8 @@ socket.onclose = function (event) {
 
 socket.onmessage = function (event) {
     try {
-        const data = JSON.stringify(event.data);
-        console.log("Получены данные " + );
+        const data = JSON.parse(event.data);
+        console.log("Получены данные ", data);
     } catch (e) {
         console.error('Ошибка в расшифровке данных, это не объект? Подробнее:', e);
     }
