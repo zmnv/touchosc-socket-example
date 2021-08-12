@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "serve .",
-    "start": "node bridge"
+    "start": "node bridge.js"
   },
   "keywords": [],
   "author": "Valerij Zimnev",

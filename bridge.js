@@ -8,10 +8,6 @@ const server = new WebSocket.Server({
 
 let socketInstance;
 
-// server.on('error', function (error) {
-//     console.log('WebSocket Error:', error);
-// })
-
 server.on('connection', function (socket) {
     console.log('Somebody Connected!');
     socketInstance = socket;
@@ -21,8 +17,6 @@ server.on('connection', function (socket) {
         console.log('WebSocket closed!');
     });
 });
-
-// ---
 
 // Create an osc.js UDP Port listening on port 57121.
 var udpPort = new osc.UDPPort({
